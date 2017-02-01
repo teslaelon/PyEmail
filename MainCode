@@ -1,0 +1,9 @@
+import smtplib
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.ehlo()
+server.starttls()
+server.login("elonmusktest@gmail.com","Teslamodel3")
+msg ="Hello!/n This email is sent via python script. Get ready for spam mail, Dont block me please."
+server.sendmail("elonmusktest@gmail.com","sarath2099@gmail.com",msg)
+
+             
